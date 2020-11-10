@@ -1,90 +1,80 @@
-body {
-  background-color: #f0f0f0;
-  font-family: Arial;
-  padding-top: 60px;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.container {
+body {
+  text-transform: uppercase;
+  background: #E5E5E5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  width: 540px;
   margin: 0 auto;
 }
 
-.header {
-  width: 540px;
-  font-size: 70px;
-  line-height: 98px;
-  font-weight: 900;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+  padding: 5px 0;
+  margin: 25px 0;
+  line-height: 72px;
+  text-align: center;
+  border-top: 10px solid royalblue;
+  border-bottom: 10px solid royalblue;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-  width: 540px;
+.clocks {
+  border: 1px solid royalblue;
+  background: #fff;
+  color: royalblue;
 }
 
-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+.timezone {
+  border: 1px solid royalblue;
+  position: relative;
   height: 104px;
-  padding: 16px 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid black;
 }
 
-.name {
+.timezone.black {
+  background: royalblue;
+  color: #fff;
+}
+
+.zone-name {
+  font-weight: 600;
   font-size: 36px;
-  font-weight: bold;
   line-height: 49px;
-  margin: 0;
-  color: black;
 }
 
-.date {
-  font-size: 16px;
-  font-weight: bold;
+.zone {
+  position: absolute;
+  top: 16px;
+  left: 40px;
+}
+
+.zone-date {
   font-style: italic;
-  line-height: 22px;
-  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .time {
   font-size: 72px;
-  font-weight: bold;
-  line-height: 98px;
-}
-
-.black {
-  background-color: black;
-}
-
-.black .name,
-.black .date,
-.black .time {
-  color: white;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  top: 3px;
 }
 /*# sourceMappingURL=style.css.map */
