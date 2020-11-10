@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">WORLD CLOCK</div>
+        <ul>
+            <li class="black" data-timezone="America/New_York">
+                <div class="col">
+                    <p class="name">NEW YORK</p>
+                    <p class="date">27 JAN. 2019</p>
+                </div>
+                <div class="col">
+                    <p class="time">02:46</p>
+                </div>
+            </li>
+            <li data-timezone="Europe/London">
+                <div class="col">
+                    <p class="name">LONDON</p>
+                    <p class="date">28 JAN. 2019</p>
+                </div>
+                <div class="col">
+                    <p class="time">02:46</p>
+                </div>
+            </li>
+            <li data-timezone="Asia/Bangkok">
+                <div class="col">
+                    <p class="name">BANGKOK</p>
+                    <p class="date">28 JAN. 2019</p>
+                </div>
+                <div class="col">
+                    <p class="time">02:46</p>
+                </div>
+            </li>
+            <li data-timezone="Asia/Taipei">
+                <div class="col">
+                    <p class="name">TAIWAN</p>
+                    <p class="date">28 JAN. 2019</p>
+                </div>
+                <div class="col">
+                    <p class="time">02:46</p>
+                </div>
+            </li>
+            <li class="black" data-timezone="Australia/Sydney">
+                <div class="col">
+                    <p class="name">SYDNEY</p>
+                    <p class="date">28 JAN. 2019</p>
+                </div>
+                <div class="col">
+                    <p class="time">02:46</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 寫法二 -->
+    <div class="wrapper">
+		<h1>World Clock</h1>
+		<div class="clocks">
+			<div class="timezone black" data-timezone="America/New_York">
+				<div class="zone">
+					<div class="zone-name">New York</div>
+					<div class="zone-date">01 Jan, 2019</div>
+				</div>
+				<div class="time">00:00</div>
+			</div>
+			<div class="timezone" data-timezone="Europe/London">
+				<div class="zone">
+					<div class="zone-name">London</div>
+					<div class="zone-date">01 Jan, 2019</div>
+				</div>
+				<div class="time">00:00</div>
+			</div>
+			<div class="timezone" data-timezone="Asia/Bangkok">
+				<div class="zone">
+					<div class="zone-name">Bangkok</div>
+					<div class="zone-date">01 Jan, 2019</div>
+				</div>
+				<div class="time">00:00</div>
+			</div>
+			<div class="timezone" data-timezone="Asia/Taipei">
+				<div class="zone">
+					<div class="zone-name">Taiwan</div>
+					<div class="zone-date">01 Jan, 2019</div>
+				</div>
+				<div class="time">00:00</div>
+			</div>
+			<div class="timezone black" data-timezone="Australia/Sydney">
+				<div class="zone">
+					<div class="zone-name">Sydney</div>
+					<div class="zone-date">01 Jan, 2019</div>
+				</div>
+				<div class="time">00:00</div>
+			</div>
+		</div>
+	</div>
+    <script src="all.js"></script>
+</body>
+
+</html>
